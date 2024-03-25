@@ -115,7 +115,7 @@ class UserController extends Controller
         ]);
     }
     public function uploadPhoto(Request $request){
-        
+        return 'dfdsffsdfdsfsdf';
         return 'test';
     }
     public function deletePhoto(Request $request){
