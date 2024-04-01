@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="app" class="print-page">
+
+
+    <header>
+        <div class="inner d-flex main-axis-space-between cross-axis-center">
+            <div class="header-left ">
+                <a href="#" class="logo d-flex cross-axis-center">
+                    <img src="assets/logo.svg" style="height: 40px;" alt="">
+                    <div class="ml-10 ">Photo Store</div>
+                </a>
+            </div>
+
+            <nav class="header-right d-flex">
+                <a href="photo-upload.html" class="nav-item">Photo Upload</a>
+                <a href="orders.html" class="nav-item">Orders</a>
+                <a href="cart.html" class="nav-item">Cart</a>
+                <a href="user-center.html" class="nav-item">User Center</a>
+                <a class="nav-item" href="login.html">Login</a>
+                <a class="nav-item" href="login.html">Logout</a>
+                <a class="nav-item" href="register.html">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="inner layout-container">
+        <main class="main-content">
+            <h1 class="main-title">My Orders</h1>
+            <table class="table">
+                <colgroup>
+                    <col style="width: 100px;">
+                    <col>
+                    <col style="width: 200px;">
+                    <col style="width: 100px">
+                    <col style="width: 120px">
+                    <col style="width: 130px">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th class="text-left">No.</th>
+                    <th class="text-left">Thumbnail</th>
+                    <th class="text-left">Order Placed</th>
+                    <th>Status</th>
+                    <th class="text-right">Total</th>
+                    <th class="text-left pl-30">Operation</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>20220202</td>
+                    <td>
+                        <div class="order-thumbnail-list" data-num="5">
+                            <div class="photo-thumbnail">
+                                <img src="imgs/img.jpg" alt="">
+                            </div>
+                            <div class="photo-thumbnail">
+                                <img src="imgs/img.jpg" alt="">
+                            </div>
+                            <div class="photo-thumbnail">
+                                <img src="imgs/img.jpg" alt="">
+                            </div>
+                            <div class="photo-thumbnail">
+                                <img src="imgs/img.jpg" alt="">
+                            </div>
+                            <div class="photo-thumbnail">
+                                <img src="imgs/img.jpg" alt="">
+                            </div>
+                        </div>
+
+                    </td>
+                    <td>
+                        2022-01-01 00:00
+                    </td>
+                    <td class="text-center">Completed</td>
+
+                    <td class="text-right">$24.00</td>
+                    <td>
+                        <div class="table-ope">
+                            <button class="btn btn-sm btn-blue" onclick="openModal()">View More</button>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>20220223</td>
+                    <td>
+                        <div class="order-thumbnail-list" data-num="5">
+                            <div class="photo-thumbnail">
+                                <img src="imgs/img.jpg" alt="">
+                            </div>
+                            <div class="photo-thumbnail">
+                                <img src="imgs/img.jpg" alt="">
+                            </div>
+                            <div class="photo-thumbnail">
+                                <img src="imgs/img.jpg" alt="">
+                            </div>
+                        </div>
+
+                    </td>
+                    <td>
+                        2022-01-01 00:00
+                    </td>
+                    <td class="text-center">Completed</td>
+
+                    <td class="text-right">$24.00</td>
+                    <td>
+                        <div class="table-ope">
+                            <button class="btn btn-sm btn-blue" onclick="openModal()">View More</button>
+                        </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </main>
+    </div>
+
+    <div class="modal">
+        <div class="modal-body">
+            <div class="modal-title">More Information</div>
+            <table class="table-bordered mt-30">
+                <colgroup>
+                    <col style="width: 200px;">
+                    <col>
+                    <col style="width: 160px;">
+                    <col>
+                </colgroup>
+                <tbody>
+                <tr>
+                    <td>Full Name</td>
+                    <td>Matthew</td>
+                    <td>Phone Number</td>
+                    <td>+1 1122233</td>
+                </tr>
+                <tr>
+                    <td>Shipping Address</td>
+                    <td colspan="3">Beijing</td>
+                </tr>
+                </tbody>
+            </table>
+
+            <div class="mt-30 bg-white form-title">Order List</div>
+
+            <div class=" content-group">
+                <div class="order-list-table-container">
+                    <table class="table" style="margin-top: -10px">
+                        <colgroup>
+                            <col style="width: 150px;">
+                            <col style="width: 200px">
+                            <col >
+                            <col style="width: 100px">
+                            <col style="width: 100px">
+                        </colgroup>
+                        <thead>
+                        <tr>
+                            <th class="text-left">Thumbnail</th>
+                            <th class="text-left">Frame Name</th>
+                            <th class="text-center">Size</th>
+                            <th class="text-right">Print Price</th>
+                            <th class="text-right">Frame Price</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+
+                            <td>
+                                <div class="photo-thumbnail">
+                                    <img src="imgs/img.jpg" alt="Image">
+                                </div>
+                            </td>
+                            <td>
+                                { Frame Name }
+                            </td>
+                            <td class="text-center">
+                                1 Inch
+                            </td>
+                            <td class="text-right">$12.00</td>
+                            <td class="text-right">$12.00</td>
+
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <div class="photo-thumbnail">
+                                    <img src="imgs/img.jpg" alt="Image">
+                                </div>
+                            </td>
+                            <td>
+                                { Frame Name }
+                            </td>
+                            <td class="text-center">
+                                1 Inch
+                            </td>
+                            <td class="text-right">$12.00</td>
+                            <td class="text-right">$12.00</td>
+
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <div class="photo-thumbnail">
+                                    <img src="imgs/img.jpg" alt="Image">
+                                </div>
+                            </td>
+                            <td>
+                                { Frame Name }
+                            </td>
+                            <td class="text-center">
+                                1 Inch
+                            </td>
+                            <td class="text-right">$12.00</td>
+                            <td class="text-right">$12.00</td>
+
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <div class="photo-thumbnail">
+                                    <img src="imgs/img.jpg" alt="Image">
+                                </div>
+                            </td>
+                            <td>
+                                { Frame Name }
+                            </td>
+                            <td class="text-center">
+                                1 Inch
+                            </td>
+                            <td class="text-right">$12.00</td>
+                            <td class="text-right">$12.00</td>
+
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <div class="photo-thumbnail">
+                                    <img src="imgs/img.jpg" alt="Image">
+                                </div>
+                            </td>
+                            <td>
+                                { Frame Name }
+                            </td>
+                            <td class="text-center">
+                                1 Inch
+                            </td>
+                            <td class="text-right">$12.00</td>
+                            <td class="text-right">$12.00</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="d-flex main-axis-space-between">
+                <div></div>
+                <div>
+                    <button class="mt-30 btn btn-blue btn-sm" onclick="closeModal()">Hide</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+<script>
+    function openModal() {
+        document.querySelector(".modal").style.display = "flex";
+    }
+
+    function closeModal(){
+        document.querySelector(".modal").style.display = "none";
+
+    }
+
+</script>
+
+</body>
+</html>

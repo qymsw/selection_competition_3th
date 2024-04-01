@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="app" class="print-page">
+
+
+    <header>
+        <div class="inner d-flex main-axis-space-between cross-axis-center">
+            <div class="header-left ">
+                <a href="#" class="logo d-flex cross-axis-center">
+                    <img src="assets/logo.svg" style="height: 40px;" alt="">
+                    <div class="ml-10 ">Photo Store</div>
+                </a>
+            </div>
+
+            <nav class="header-right d-flex">
+                <a href="photo-upload.html" class="nav-item">Photo Upload</a>
+                <a href="orders.html" class="nav-item">Orders</a>
+                <a href="cart.html" class="nav-item">Cart</a>
+                <a href="user-center.html" class="nav-item">User Center</a>
+                <a class="nav-item" href="login.html">Login</a>
+                <a class="nav-item" href="login.html">Logout</a>
+                <a class="nav-item" href="register.html">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="inner layout-container">
+        <main class="main-content">
+            <h1 class="main-title">User Center</h1>
+            <div class="mt-40">
+                <div class="info-combination ">
+                    <div class="info-title">Username</div>
+                    <div class="info-content">Test_User</div>
+                </div>
+
+                <div class="info-combination ">
+                    <div class="info-title">Email</div>
+                    <div class="info-content">theuser@eap.com</div>
+                </div>
+
+                <div class="info-combination ">
+                    <div class="info-title">Create Time</div>
+                    <div class="info-content">2022-01-01 00:00</div>
+                </div>
+
+                <div class="info-combination ">
+                    <div class="info-title">Password</div>
+                    <div class="info-content">*****************</div>
+                </div>
+
+                <div class="info-combination ">
+                    <div class="info-title">Operation</div>
+                    <div class="info-content">
+                        <button class="btn btn-sm btn-green" onclick="location.href='orders.html'">My Orders</button>
+                        <button class="btn btn-sm btn-red ml-20" onclick="openModal()">Reset Password</button>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+
+</div>
+
+
+<div class="modal toast-modal">
+    <div class="modal-body">
+        <form action="" class="auth-form">
+            <div class="auth-title">Reset Password</div>
+
+            <div class="form-combination ">
+                <label for="original-password">Original Password</label>
+                <input type="password" id="original-password" name="original_password" class="form-element">
+            </div>
+
+            <div class="form-combination mt-20">
+                <label for="new-password">New Password</label>
+                <input type="password" id="new-password" name="new_password" class="form-element">
+            </div>
+
+            <div class="form-combination mt-20">
+                <label for="repeat-password">Repeat Password</label>
+                <input type="password" id="repeat-password" name="repeat_password" class="form-element">
+            </div>
+
+            <button class="btn btn-blue mt-30 auth-btn">Reset</button>
+            <div class="text-right auth-tip">
+                <a href="#" onclick="closeModal()">Cancel</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<script>
+    function openModal() {
+        document.querySelector(".modal").style.display = "flex";
+    }
+
+    function closeModal(){
+        document.querySelector(".modal").style.display = "none";
+
+    }
+
+</script>
+
+</body>
+</html>

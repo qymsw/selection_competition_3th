@@ -101,6 +101,8 @@
                     </div>
                 </div>
 
+                <img src="http://localhost/uploads/5DQBfSN361g0CUeB4sd3SqAZZ4gB0uN5XaQm2pPo.jpg" alt="">
+dsadasdasdadasdasdasdasssssssssssssssssssssssssssssssssssssssssssss
                 <div class="flex justify-center mt-4 sm:items-center sm:justify-between">
                     <div class="text-center text-sm text-gray-500 sm:text-left">
                         <div class="flex items-center">

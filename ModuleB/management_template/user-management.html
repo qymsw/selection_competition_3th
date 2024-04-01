@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+
+<nav class="navbar fixed-top flex-md-nowrap p-0">
+    <a class="navbar-brand layout-left mr-0 text-warning font-italic" href="index.html">
+        <img src="assets/imgs/logo.svg" alt="logo" height="36px">
+        Photo Store
+    </a>
+    <ul class="navbar-nav px-4 flex-row">
+        <li class="nav-item text-nowrap mr-3">
+            <div class="navbar-text">example@example.com</div>
+        </li>
+        <li class="nav-item text-nowrap">
+            <a class="nav-link" id="logout" href="login.html">Logout</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="container-fluid">
+    <div class="d-flex">
+        <!--Left Navbar Area-->
+        <nav class="layout-left sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="size-management.html">Size Management</a></li>
+                    <li class="nav-item"><a class="nav-link" href="frame-management.html">Frame Management</a></li>
+                    <li class="nav-item"><a class="nav-link" href="order-management.html">Order
+                        Management</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart-management.html">Cart Management</a></li>
+                    <li class="nav-item "><a class="nav-link" href="admin-management.html">Admin Management</a></li>
+                    <li class="nav-item nav-active"><a class="nav-link" href="user-management.html">User Management</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <!--Right Content Area-->
+        <main role="main" class="layout-right container-fluid">
+
+            <div class=" mb-3 pt-3">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center">
+                    <h1 class="h2">User Account List</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group mr-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <table class="table border mb-0 align-middle">
+                <colgroup>
+                    <col width="30px">
+                    <col>
+                    <col>
+                    <col width="160px">
+                    <col width="220px">
+                </colgroup>
+                <thead>
+                <tr class="">
+                    <th>Id</th>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>Create Time</th>
+                    <th>Operation</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>tuser1@eap.com</td>
+                    <td>testuser</td>
+                    <td >2022-01-01 00:00</td>
+                    <td>
+                        <button class="btn btn-warning btn-sm no-bdr mr-2" onclick="openModal('#reset_password')">Reset Password</button>
+                        <button class="btn btn-danger btn-sm no-bdr" onclick="openModal('#confirm')">Delete</button>
+                    </td>
+                </tr>
+                <tr>
+
+                </tr>
+                </tbody>
+            </table>
+
+        </main>
+
+    </div>
+</div>
+
+<div class="modal" id="reset_password">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Password Reset Success!</h5>
+                <button type="button" class="close" onclick="closeModal('#reset_password')">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div>The new password is : x01d8gm3</div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary btn-sm" onclick="closeModal('#reset_password')">OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" id="confirm">
+    <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Confirm</h5>
+                <button type="button" class="close" onclick="closeModal('#confirm')">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div>It's an irreversible operation.</div>
+                <div>Are you sure? </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" onclick="closeModal('#confirm')">Close</button>
+                <button type="button" class="btn btn-danger btn-sm" onclick="closeModal('#confirm')">Confirm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>

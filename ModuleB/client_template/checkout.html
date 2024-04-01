@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="app" class="print-page">
+
+
+    <header>
+        <div class="inner d-flex main-axis-space-between cross-axis-center">
+            <div class="header-left ">
+                <a href="#" class="logo d-flex cross-axis-center">
+                    <img src="assets/logo.svg" style="height: 40px;" alt="">
+                    <div class="ml-10 ">Photo Store</div>
+                </a>
+            </div>
+
+            <nav class="header-right d-flex">
+                <a href="photo-upload.html" class="nav-item">Photo Upload</a>
+                <a href="orders.html" class="nav-item">Orders</a>
+                <a href="cart.html" class="nav-item">Cart</a>
+                <a href="user-center.html" class="nav-item">User Center</a>
+                <a class="nav-item" href="login.html">Login</a>
+                <a class="nav-item" href="login.html">Logout</a>
+                <a class="nav-item" href="register.html">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="inner layout-container">
+        <main class="main-content">
+            <h1 class="main-title">Checkout</h1>
+
+            <div class="mt-40 bg-white form-title">Complete Your Personal Information</div>
+
+            <div class="content-group d-flex person-info-form">
+                <div class="form-combination">
+                    <label for="full-name">Full Name</label>
+                    <input type="text" class="form-element" id="full-name" name="full_name">
+                </div>
+
+                <div class="form-combination ml-30">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" class="form-element" id="phone" name="phone_number">
+                </div>
+
+                <div class="form-combination ml-30">
+                    <label for="address">Shipping address</label>
+                    <input type="text" class="form-element" id="address" name="shipping_address">
+                </div>
+            </div>
+
+            <div class="mt-40 bg-white form-title">Complete Your Credit Card Information</div>
+            <div class="content-group d-flex credit-info-form">
+                <div class="form-combination w-30">
+                    <label for="card-number">Card Number</label>
+                    <input type="text" class="form-element" id="card-number" name="card_number">
+                </div>
+
+                <div class="form-combination ml-30 w-30">
+                    <label for="name-on-card">Name on Card</label>
+                    <input type="text" class="form-element" id="name-on-card" name="name_on_card">
+                </div>
+
+                <div class="form-combination ml-30">
+                    <label for="exp-date">Expiration date</label>
+                    <input type="date" class="form-element" id="exp-date" name="exp_date">
+                </div>
+
+                <div class="form-combination ml-30 w-15">
+                    <label for="cvv">CVV/CID</label>
+                    <input type="text" class="form-element" id="cvv" name="cvv">
+                </div>
+            </div>
+
+            <div class="mt-40 bg-white form-title">Photo List</div>
+            <div class="content-group checkout-photo-list">
+                <table class="table">
+                    <colgroup>
+                        <col style="width: 150px;">
+                        <col>
+                        <col >
+                        <col style="width: 160px">
+                        <col style="width: 160px">
+                    </colgroup>
+                    <thead>
+                    <tr>
+                        <th class="text-left">Thumbnail</th>
+                        <th class="text-left">Frame Name</th>
+                        <th class="text-left">Size</th>
+                        <th class="text-right">Print Price</th>
+                        <th class="text-right">Frame Price</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+
+                        <td>
+                            <div class="photo-thumbnail">
+                                <img src="imgs/img.jpg" alt="Image">
+                            </div>
+                        </td>
+                        <td>
+                            { Frame Name }
+                        </td>
+                        <td>
+                            1 Inch
+                        </td>
+                        <td class="text-right">$12.00</td>
+                        <td class="text-right">$12.00</td>
+
+                    </tr>
+                    <tr>
+
+                        <td>
+                            <div class="photo-thumbnail">
+                                <img src="imgs/img.jpg" alt="Image">
+                            </div>
+                        </td>
+                        <td>
+                            { Frame Name }
+                        </td>
+                        <td>
+                            1 Inch
+                        </td>
+                        <td class="text-right">$12.00</td>
+                        <td class="text-right">$12.00</td>
+
+                    </tr>
+                    </tbody>
+                </table>
+
+            </div>
+
+            <div class="mt-60"></div>
+
+            <div class="cart-footer">
+                <div class="inner d-flex main-axis-space-between cross-axis-center">
+                    <div>
+                        <button class="checkout-cancel-btn" onclick="location.href='cart.html'">Cancel</button>
+                    </div>
+                    <div class="cart-footer-info d-flex cross-axis-center">
+                        <div class="cart-total">
+                            Total: $0.00
+                        </div>
+                        <button class="checkout-submit-btn" onclick="location.href='orders.html'">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+</div>
+
+</body>
+</html>

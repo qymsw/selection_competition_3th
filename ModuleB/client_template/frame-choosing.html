@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="app" class="print-page">
+
+
+    <header>
+        <div class="inner d-flex main-axis-space-between cross-axis-center">
+            <div class="header-left ">
+                <a href="#" class="logo d-flex cross-axis-center">
+                    <img src="assets/logo.svg" style="height: 40px;" alt="">
+                    <div class="ml-10 ">Photo Store</div>
+                </a>
+            </div>
+
+            <nav class="header-right d-flex">
+                <a href="photo-upload.html" class="nav-item">Photo Upload</a>
+                <a href="orders.html" class="nav-item">Orders</a>
+                <a href="cart.html" class="nav-item">Cart</a>
+                <a href="user-center.html" class="nav-item">User Center</a>
+                <a class="nav-item" href="login.html">Login</a>
+                <a class="nav-item" href="login.html">Logout</a>
+                <a class="nav-item" href="register.html">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="inner layout-container">
+        <div class="frame-list">
+            <div class="frame-item">
+                <div class="frame-thumbnail">
+                    <img src="imgs/mockup_1.jpg" alt="">
+                </div>
+                <div class="frame-info">
+                    <div class="frame-name">Simplicity</div>
+                    <div class="frame-info-inline d-flex main-axis-space-between">
+                        <div class="frame-available">1 Inch</div>
+                        <div class="frame-price">$12.00</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <main class="main-content">
+            <h1 class="main-title">Choose Your Photo Frame</h1>
+
+            <div class="frame-preview-area d-flex main-axis-center cross-axis-center mt-40">
+                <div class="frame-preview-container">
+                    <img src="imgs/mockup_1.jpg" style="width: 100%;" alt="">
+                </div>
+            </div>
+
+            <div class="mt-40 function-btn-list d-flex main-axis-space-between">
+                <button class="btn btn-sm btn-red" onclick="location.href='photo-upload.html'">Cancel</button>
+                <div>
+                    <button class="btn btn-sm btn-blue" onclick="location.href='photo-upload.html'">Finish</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+</div>
+
+</body>
+</html>

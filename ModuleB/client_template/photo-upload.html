@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div id="app" class="print-page">
+
+
+    <header>
+        <div class="inner d-flex main-axis-space-between cross-axis-center">
+            <div class="header-left ">
+                <a href="#" class="logo d-flex cross-axis-center">
+                    <img src="assets/logo.svg" style="height: 40px;" alt="">
+                    <div class="ml-10 ">Photo Store</div>
+                </a>
+            </div>
+
+            <nav class="header-right d-flex">
+                <a href="photo-upload.html" class="nav-item">Photo Upload</a>
+                <a href="orders.html" class="nav-item">Orders</a>
+                <a href="cart.html" class="nav-item">Cart</a>
+                <a href="user-center.html" class="nav-item">User Center</a>
+                <a class="nav-item" href="login.html">Login</a>
+                <a class="nav-item" href="login.html">Logout</a>
+                <a class="nav-item" href="register.html">Register</a>
+            </nav>
+        </div>
+    </header>
+
+    <div class="inner layout-container">
+
+        <main class="main-content">
+            <h1 class="main-title">Upload Your Photo File</h1>
+
+            <div class="upload-photo-list mt-40">
+                <label class="upload-tool">
+                    <input type="file" multiple style="position: absolute;width: 0px;height: 0px;">
+                    <svg viewBox="0 0 1024 1024" version="1.1"
+                         xmlns="http://www.w3.org/2000/svg" p-id="2739">
+                        <path d="M896 917.333333H128c-12.8 0-21.333333-8.533333-21.333333-21.333333V512c0-12.8 8.533333-21.333333 21.333333-21.333333s21.333333 8.533333 21.333333 21.333333v362.666667h725.333334V512c0-12.8 8.533333-21.333333 21.333333-21.333333s21.333333 8.533333 21.333333 21.333333v384c0 12.8-8.533333 21.333333-21.333333 21.333333zM704 341.333333c-6.4 0-10.666667-2.133333-14.933333-6.4L512 157.866667l-177.066667 177.066666c-8.533333 8.533333-21.333333 8.533333-29.866666 0s-8.533333-21.333333 0-29.866666l192-192c8.533333-8.533333 21.333333-8.533333 29.866666 0l192 192c8.533333 8.533333 8.533333 21.333333 0 29.866666-4.266667 4.266667-8.533333 6.4-14.933333 6.4z"
+                              p-id="2740"></path>
+                        <path d="M512 704c-12.8 0-21.333333-8.533333-21.333333-21.333333V128c0-12.8 8.533333-21.333333 21.333333-21.333333s21.333333 8.533333 21.333333 21.333333v554.666667c0 12.8-8.533333 21.333333-21.333333 21.333333z"
+                              p-id="2741">
+                        </path>
+                    </svg>
+                </label>
+                <div class="upload-photo-item">
+                    <div class="upi-mask">
+                        <button class="upi-btn">
+                            <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" ><path d="M938.666667 128h-42.666667v874.666667a21.333333 21.333333 0 0 1-21.333333 21.333333H149.333333a21.333333 21.333333 0 0 1-21.333333-21.333333V128H85.333333a21.333333 21.333333 0 0 1 0-42.666667h853.333334a21.333333 21.333333 0 0 1 0 42.666667z m-85.333334 0H170.666667v853.333333h682.666666V128z m-533.333333 85.333333a21.333333 21.333333 0 0 1 21.333333 21.333334v640a21.333333 21.333333 0 0 1-42.666666 0V234.666667a21.333333 21.333333 0 0 1 21.333333-21.333334z m192 0a21.333333 21.333333 0 0 1 21.333333 21.333334v640a21.333333 21.333333 0 0 1-42.666666 0V234.666667a21.333333 21.333333 0 0 1 21.333333-21.333334z m192 0a21.333333 21.333333 0 0 1 21.333333 21.333334v640a21.333333 21.333333 0 0 1-42.666666 0V234.666667a21.333333 21.333333 0 0 1 21.333333-21.333334z m0-170.666666H320a21.333333 21.333333 0 0 1 0-42.666667h384a21.333333 21.333333 0 0 1 0 42.666667z" ></path></svg>
+                        </button>
+                    </div>
+                    <img src="imgs/img.jpg" alt="Image">
+                </div>
+                <div class="upload-photo-item">
+                    <div class="upi-mask">
+                        <button class="upi-btn">
+                            <svg viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" ><path d="M938.666667 128h-42.666667v874.666667a21.333333 21.333333 0 0 1-21.333333 21.333333H149.333333a21.333333 21.333333 0 0 1-21.333333-21.333333V128H85.333333a21.333333 21.333333 0 0 1 0-42.666667h853.333334a21.333333 21.333333 0 0 1 0 42.666667z m-85.333334 0H170.666667v853.333333h682.666666V128z m-533.333333 85.333333a21.333333 21.333333 0 0 1 21.333333 21.333334v640a21.333333 21.333333 0 0 1-42.666666 0V234.666667a21.333333 21.333333 0 0 1 21.333333-21.333334z m192 0a21.333333 21.333333 0 0 1 21.333333 21.333334v640a21.333333 21.333333 0 0 1-42.666666 0V234.666667a21.333333 21.333333 0 0 1 21.333333-21.333334z m192 0a21.333333 21.333333 0 0 1 21.333333 21.333334v640a21.333333 21.333333 0 0 1-42.666666 0V234.666667a21.333333 21.333333 0 0 1 21.333333-21.333334z m0-170.666666H320a21.333333 21.333333 0 0 1 0-42.666667h384a21.333333 21.333333 0 0 1 0 42.666667z" ></path></svg>
+                        </button>
+                    </div>
+                    <img src="imgs/img.jpg" alt="Image">
+                </div>
+            </div>
+
+            <div class="mt-40 function-btn-list d-flex main-axis-space-between">
+                <button class="btn btn-sm btn-red" onclick="location.href='size-selection.html'">Change Size</button>
+                <div>
+                    <button class="btn btn-sm btn-blue" onclick="location.href='cart.html'">Add to Cart</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+
+</div>
+
+</body>
+</html>

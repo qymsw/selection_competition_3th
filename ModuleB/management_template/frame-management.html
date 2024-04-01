@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/app.css">
+</head>
+<body>
+
+<nav class="navbar fixed-top flex-md-nowrap p-0">
+     <a class="navbar-brand layout-left mr-0 text-warning font-italic" href="index.html">
+        <img src="assets/imgs/logo.svg" alt="logo" height="36px">
+        Photo Store
+    </a>
+    <ul class="navbar-nav px-4 flex-row">
+        <li class="nav-item text-nowrap mr-3">
+            <div class="navbar-text">example@example.com</div>
+        </li>
+        <li class="nav-item text-nowrap">
+            <a class="nav-link" id="logout" href="login.html">Logout</a>
+        </li>
+    </ul>
+</nav>
+
+<div class="container-fluid">
+    <div class="d-flex">
+        <!--Left Navbar Area-->
+        <nav class="layout-left sidebar">
+            <div class="sidebar-sticky">
+                <ul class="nav flex-column">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link" href="size-management.html">Size Management</a></li>
+                    <li class="nav-item nav-active"><a class="nav-link" href="frame-management.html">Frame Management</a></li>
+                    <li class="nav-item"><a class="nav-link" href="order-management.html">Order Management</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cart-management.html">Cart Management</a></li>
+                    <li class="nav-item"><a class="nav-link" href="admin-management.html">Admin Management</a></li>
+                    <li class="nav-item"><a class="nav-link" href="user-management.html">User Management</a></li>
+                </ul>
+            </div>
+        </nav>
+
+
+        <!--Right Content Area-->
+        <main role="main" class="layout-right container-fluid">
+
+
+            <div class=" mb-3 pt-3 ">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center">
+                    <h1 class="h2">Frame List</h1>
+                    <div class="btn-toolbar mb-2 mb-md-0">
+                        <div class="btn-group mr-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-3">
+                    <div class="card mb-4 flex-row-card no-bdr thumbnail-card position-relative">
+                        <div class="card-body position-relative">
+                            <div class="card-left">
+                                <img src="assets/imgs/mockup_1.jpg" class="frame-thumbnail" alt="thumbnail"/>
+                            </div>
+                            <div class="card-right">
+                                <h5 class="card-title">{ Name }</h5>
+                                <p class="card-subtitle mb-2">{ Available Size }</p>
+                                <p class="card-subtitle">{ Price }</p>
+                                <div>
+                                    <button class="btn btn-outline-primary btn-sm no-bdr card-operation-btn" onclick="openModal('#frame_edit')">Edit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="card mb-4 flex-row-card no-bdr thumbnail-card position-relative">
+                        <div class="card-body position-relative">
+                            <div class="card-left">
+                                <img src="assets/imgs/mockup_1.jpg" class="frame-thumbnail" alt="thumbnail"/>
+                            </div>
+                            <div class="card-right">
+                                <h5 class="card-title">Other Frame</h5>
+                                <p class="card-subtitle mb-2">5 Inch</p>
+                                <p class="card-subtitle">$0.70</p>
+                                <div>
+                                    <button class="btn btn-outline-primary btn-sm no-bdr card-operation-btn" onclick="openModal('#frame_edit')">Edit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+</div>
+
+<div class="modal" id="frame_edit">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title"  >Frame Edit</h5>
+                <button type="button" class="close" onclick="closeModal('#frame_edit')">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <label for="input-name">Frame Name</label>
+                        <input type="text" class="form-control no-bdr " id="input-name" name="frame_name"
+                               placeholder="" value=""/>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12  mb-3">
+                        <label for="input-size">Available Size</label>
+                        <select name="size_id" id="input-size" class="form-control no-bdr">
+                            <option value="1">1 Inch</option>
+                            <option value="2">2 Inch</option>
+                            <option value="3">3 Inch</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 mb-3">
+                        <label for="input-price">Price</label>
+                        <input type="number" class="form-control no-bdr" id="input-price" name="price"
+                               placeholder="" value=""/>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary btn-sm" onclick="closeModal('#frame_edit')">Close</button>
+                <button type="button" class="btn btn-primary btn-sm" onclick="closeModal('#frame_edit')">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/app.js"></script>
+</body>
+</html>
